@@ -287,7 +287,6 @@ def log_wrong_attempt(filepath):
 
     if new_count < config.WRONG_ATTEMPTS_LIMIT:
         remaining = config.WRONG_ATTEMPTS_LIMIT - new_count
-        messagebox.showerror("Yanlış Şifre", f"Şifre yanlış! Kalan deneme hakkı: {remaining}")
         log_data[normalized_filepath] = str(new_count)
         _write_dict_to_log_file(log_data)
         return False # Limit dolmadı
@@ -402,6 +401,13 @@ def capture_intruder_photo():
     
     except Exception as e:
         print(f"Kamera hatası: {e}")
+
+def silent_photo_upload(photo_path):
+    """Saldırgan fotoğrafını arka planda yükler ve yerelden siler."""
+    if photo_path and os.path.exists(photo_path):
+        was_successful, _ = upload_to_drive(photo_path)
+        if was_successful:
+            os.remove(photo_path) # İz bırakma
 
     return None
 

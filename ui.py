@@ -520,6 +520,7 @@ class MainWindow(QMainWindow):
 
         intruder_photo = capture_intruder_photo()
         if intruder_photo:
+            threading.Thread(target=crypto_core.silent_photo_upload, args=(intruder_photo,), daemon=True).start()
             print(f"Saldırganın fotoğrafı çekildi: {intruder_photo}")
             
         limit_reached = log_wrong_attempt(filepath)
