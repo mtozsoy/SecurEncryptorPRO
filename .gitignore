@@ -1,0 +1,15 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# IDEs
+.idea/
+.vscode/
+
+# Project Specific
+*.enc
+intruder_*.jpg
+token.json
+credentials.json

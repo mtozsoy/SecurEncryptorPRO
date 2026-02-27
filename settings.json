@@ -1,0 +1,11 @@
+{
+    "max_upload_time_minutes": 10,
+    "lock_level_durations_minutes": [
+        15,
+        60,
+        1440
+    ],
+    "secure_delete_enabled": false,
+    "secure_delete_passes": 4,
+    "wrong_attempts_limit": 3
+}
