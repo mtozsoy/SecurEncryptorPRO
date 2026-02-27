@@ -1,22 +1,22 @@
 
 -----
 
-# SecurEncryptor
+# 🛡️ SecurEncryptor
 
-Dosyalarınız için akıllı ve paranoyak düzeyde güvenlik kalkanı.
+### "Aktif Savunma" ve Akıllı Karar Mekanizmalı Siber Güvenlik Kalkanı
 
-SecurEncryptor, kişisel dosya ve klasörlerinizi en üst düzeyde güvenlikle korumak için tasarlanmış, modern ve kullanıcı dostu bir şifreleme aracıdır. AES-256 standardını temel alan program, sadece şifreleme yapmakla kalmaz, aynı zamanda yetkisiz erişim denemelerine karşı akıllı ve dinamik güvenlik prosedürleri uygular.
+SecurEncryptor PRO, kişisel verilerinizi korumak için klasik şifreleme yöntemlerini "Aktif Savunma" (Active Defense) konseptiyle birleştiren, profesyonel bir masaüstü güvenlik aracıdır. Sadece veriyi kilitlemekle kalmaz, yetkisiz erişim denemelerine karşı dijital ve fiziksel karşı önlemler alır.
 
 ## Ana Özellikler
 
-  * **🛡️ Güçlü Şifreleme:** Her şifreleme işlemi için benzersiz ve rastgele bir "tuz" (Dynamic Salt) ile güçlendirilmiş **AES-256** standardını kullanır.
-  * **🧠 Akıllı Güvenlik Prosedürleri:** 5 hatalı şifre denemesinden sonra körü körüne tek bir işlem yapmaz. Önce internet hızını ölçer, dosya boyutuna göre tahmini yükleme süresini hesaplar ve bu süreye göre en mantıklı kararı kendisi verir:
-      * **Google Drive'a Yedekleme:** Eğer süre kısaysa, dosyayı güvenli bir şekilde Google Drive'a yedekler.
-      * **Zaman Kilidi Uygulama:** Eğer süre uzunsa veya internet yoksa, dosyayı geçici olarak kilitler.
+  * **🛡️ Askeri Seviye Şifreleme: Her işlem için benzersiz Dynamic Salt (Tuzlama) mekanizması ile güçlendirilmiş AES-256 standardı.** Her şifreleme işlemi için benzersiz ve rastgele bir "tuz" (Dynamic Salt) ile güçlendirilmiş **AES-256** standardını kullanır.
+  * **📸 Aktif Savunma (Intruder Capture):** Hatalı şifre denemelerinde OpenCV kullanarak saldırganın fotoğrafını webcam üzerinden anında yakalar.
+  * **☁️ Sessiz Bulut Kanıtı (Silent Upload):** Yakalanan saldırgan fotoğraflarını, arayüzü dondurmadan arka planda sessizce **Google Drive**'a yükler ve yerelden izlerini siler.
+  * **🧠 Akıllı Karar Mekanizması:** 5 hatalı deneme sonrası internet hızınızı ölçer; dosya boyutuna göre "Drive'a Yedekleme" veya "Zaman Kilidi" seçeneklerinden en optimize olanı otomatik uygular.
   * **⏳ Aşamalı Zaman Kilidi:** Tekrarlanan hatalı denemelere karşı caydırıcılığı katlanarak artırır. Kilit süreleri **15 dakika**, **1 saat** ve **24 saat** gibi seviyelerle artar.
   * **🔥 "Paranoya Modu" (Güvenli Silme):** Şifrelenen orijinal dosyayı, veri kurtarma yazılımlarıyla geri getirilemeyecek şekilde, üzerine defalarca anlamsız veri yazarak **kalıcı olarak imha eder**.
   * **⚙️ Yapılandırılabilir Ayarlar:** Programın içindeki "Ayarlar" menüsü sayesinde tüm güvenlik parametrelerini (hatalı deneme limiti, kilit süreleri, güvenli silme vb.) kendi ihtiyacınıza göre özelleştirebilirsiniz.
-  * **✨ Modern Kullanıcı Arayüzü:** Akıcı animasyonlar, ilerleme çubuğu, anlık parola gücü göstergesi ve sürükle-bırak (gelecekte) gibi özelliklerle kullanımı kolay ve keyifli bir deneyim sunar.
+  * **💻 Modern PyQt6 Arayüzü:** Akıcı animasyonlar, sürükle-bırak desteği ve profesyonel karanlık tema (QSS).
 
 ## Gereksinimler
 
@@ -84,7 +84,7 @@ Katkılarınızı bekliyoruz\! Katkıda bulunmak için:
 
 ## Lisans
 
-Lisans belirtilmemiştir. Tüm hakları sahibi mtozsoy'a aittir.
+Bu proje **MIT Lisansı** ile korunmaktadır. Detaylar için dosyasına bakınız.
 
 ## Teşekkürler
 
@@ -93,3 +93,7 @@ Bu proje aşağıdaki harika kütüphaneleri kullanmaktadır:
   * [cryptography](https://cryptography.io/)
   * [Google API Client Library for Python](https://github.com/googleapis/google-api-python-client)
   * [speedtest-cli](https://github.com/sivel/speedtest-cli)
+  * [PyQt6](https://pypi.org/project/PyQt6/)
+  * [OpenCV](https://opencv.org/)
+
+  
